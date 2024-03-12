@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: asap;
+  src: url(../font/Asap-Medium.ttf);
+}
+html {
+  font-family: asap;
+}
+.contain {
+  width: 100vw;
+  height: 45vh;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+}
+.about {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  left: 5%;
+  top: 65%;
+}
+.logo {
+  background-color: white;
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > img {
+  width: 120px;
+}
+.info {
+  padding-left: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+.info > p {
+  display: inline-block;
+  padding-top: 35px;
+  padding-right: 25px;
+}
+.nav {
+  float: right;
+  text-transform: uppercase;
+}
+.nav > ul > li {
+  display: inline-block;
+  font-weight: 500;
+  padding: 15px;
+}
+.nav > ul > li > label {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.tab:hover ~ label {
+  color: #ff0400;
+  border-bottom: 3px solid #ff0400;
+}
+.tab:checked ~ label {
+  color: #ff0400;
+  border-bottom: 3px solid #ff0400;
+}
